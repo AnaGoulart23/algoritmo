@@ -1,0 +1,12 @@
+#Algoritmo
+
+Tecnologias utilizadas:
+-Maven
+-Java 8
+-Spring Boot
+
+curl --request GET \
+  --url http://localhost:8080/algoritmo/{NUMERO}
+
+Ess api recebe um número N que faz parte de um conjunto de irmãos, e retorna o maior da família.
+Quando o número maior exceder 100000000 retorna -1
