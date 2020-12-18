@@ -22,8 +22,8 @@ public class AlgoritmoController {
 	@Autowired
 	private AlgoritmoService algoritmoService;
 	
-	@GetMapping("{numero}")
-	public ResponseEntity<?> numerosIrmaos(@PathVariable("numero") Integer numero){
-		return ResponseEntity.ok(algoritmoService.getMaiorNumeroIrmao(numero));
+	@GetMapping("{valor}")
+	public ResponseEntity<?> numerosIrmaos(@PathVariable("valor") String valor){
+		return ResponseEntity.ok(algoritmoService.getMaiorNumeroIrmao(valor));
 	}
 }
